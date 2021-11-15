@@ -8,7 +8,7 @@ if(isset($_SESSION['aid']))
 if(!empty($_POST))
 {
 	$aid=mysqli_real_escape_string($al,$_POST['aid']);
-	$pass=mysqli_real_escape_string($al,sha1($_POST['pass']));
+	$pass=mysqli_real_escape_string($al,$_POST['pass']);
 	$sql=mysqli_query($al,"select * from admin where aid='$aid' and password='$pass'");
 	if(mysqli_num_rows($sql)==1)
 	{

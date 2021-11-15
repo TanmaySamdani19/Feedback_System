@@ -40,8 +40,10 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`aid`, `name`, `password`) VALUES
-('tanmay', 'International Institute of Information Technology', '222b3e11200d82d61f1b89533e59175f71d23972'),
-('admin', 'Admin User', 'd033e22ae348aeb5660fc2140aec35850c4da997');
+('tanmay', 'International Institute of Information Technology', 'danger'),
+('vikas','International Institute of Information Technology','danger'),
+('aniket','International Institute of Information Technology','danger'),
+('admin', 'Admin User', 'danger');
 
 -- --------------------------------------------------------
 
@@ -86,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `faculty` (
 --
 
 INSERT INTO `faculty` (`id`, `faculty_id`, `name`, `s1`, `s2`) VALUES
-(9, '5fffefc28686f', 'Deeoti Maam', 'PHP', 'JAVA');
+(9, '5fffefc28686f', 'Deepti Maam', 'PHP', 'JAVA');
 
 -- --------------------------------------------------------
 

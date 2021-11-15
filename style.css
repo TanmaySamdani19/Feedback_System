@@ -22,7 +22,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4c4c4', end
 	-webkit-box-shadow: 0px 15px 35px 0px rgba(107,90,107,1);
 	-moz-box-shadow: 0px 15px 35px 0px rgba(107,90,107,1);
 	box-shadow: 0px 15px 35px 0px rgba(107,90,107,1);
-	background-color:rgba(59,59,59,1.00);
+	background-color:rgb(50 84 165);
 	font-family:"Trebuchet MS";
 	font-size:24px;
 	color:rgba(215,215,215,1.00);
@@ -53,7 +53,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4c4c4', end
 	width:500px;
 	height:auto;
 	background-color:transparent;
-	border:5px solid rgba(107,107,107,1.00);
+	border:5px solid rgba(107,2,107,1);
 	border-radius:2px;
 	margin-left:auto;
 	margin-right:auto;
