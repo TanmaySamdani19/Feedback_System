@@ -1,31 +1,11 @@
--- phpMyAdmin SQL Dump
--- version 5.0.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1:3306
--- Generation Time: May 05, 2021 at 05:11 PM
--- Server version: 5.7.31
--- PHP Version: 7.3.21
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `feedback`
---
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `admin`
---
 
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
@@ -35,9 +15,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
   PRIMARY KEY (`aid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
 -- Dumping data for table `admin`
---
 
 INSERT INTO `admin` (`aid`, `name`, `password`) VALUES
 ('tanmay', 'International Institute of Information Technology', 'danger'),
@@ -47,9 +25,7 @@ INSERT INTO `admin` (`aid`, `name`, `password`) VALUES
 
 -- --------------------------------------------------------
 
---
 -- Table structure for table `comments`
---
 
 DROP TABLE IF EXISTS `comments`;
 CREATE TABLE IF NOT EXISTS `comments` (
@@ -60,9 +36,7 @@ CREATE TABLE IF NOT EXISTS `comments` (
   UNIQUE KEY `faculty_id_3` (`faculty_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
---
 -- Dumping data for table `comments`
---
 
 INSERT INTO `comments` (`id`, `faculty_id`, `comment`) VALUES
 (1, '5fffefc28686f', 'Amazing Faculty');
@@ -157,7 +131,3 @@ CREATE TABLE IF NOT EXISTS `questions` (
 INSERT INTO `questions` (`id`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`, `q8`, `q9`, `q10`) VALUES
 (1, 'Description of course objectives &amp; assignments', 'Communication of ideas &amp; information', 'Expression of expectations for performance', 'Availability to assist students in or out of class', 'Respect or concern for students', 'Stimulation of interest in course', 'Facilitation of learning', 'Enthusiasm for the subject', 'Encourage students to think independently, creatively &amp; critically', 'Overall rating');
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
