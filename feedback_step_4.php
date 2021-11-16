@@ -107,10 +107,7 @@ $parameters = array("Poor","Fair","Good","Very Good","Excellent");
                         <input type="radio" required value="<?php echo $j;?>" name="q<?php echo $i;?>" /><?php echo $parameters[$j-1];?>&nbsp;&nbsp;
                         <?php } ?> </span>
                         				</div>
-                                        	<hr style="width:100%;"> <?php } ?>
-                                         <div class="tddd">
-                                         <textarea name="comment" cols="40" required placeholder="Enter Comments"></textarea>
-                                         </div>
+                                        	<hr style="width:100%;"> <?php } ?>                      
         	<input type="button" onClick="window.location='feedback_step_3.php'" value="BACK">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="SUBMIT" onClick="return confirm('Are you sure?')" />
             <br>
 <br>

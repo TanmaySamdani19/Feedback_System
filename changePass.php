@@ -13,8 +13,8 @@ $old=$y['password'];
 
 if(!empty($_POST))
 {
-	$p1=sha1($_POST['p1']);
-	$p2=sha1($_POST['p2']);
+	$p1=$_POST['p1'];
+	$p2=$_POST['p2'];
 	if($old==$p1)
 	{
 		$u=mysqli_query($al,"update admin set password='$p2' where aid='$aid'");

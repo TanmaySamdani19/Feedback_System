@@ -33,7 +33,7 @@
 			<select name="roll" required>
             <option value="NA" disabled selected> - - Select Roll No. - -</option>
             <?php
-			for($x=1;$x<=200;$x++)
+			for($x=1;$x<=200;$x++)//for roll numbers 1 to 200
 			{
 				?>
                 <option value="<?php echo $x;?>"><?php echo $x;?></option>
